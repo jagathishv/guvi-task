@@ -1,0 +1,44 @@
+{
+    "basics":{
+            "name":"jagathish v",
+             "mobile number":"9080454718",
+             "Email id":"jagathishveerappan",
+    "persoonal details":[
+        {
+        "father name":"veerappan",
+        "date of birth":"21-08-2000"
+        }]
+    }, 
+      "address":[
+          {
+          "door no":"3/255",
+          "street":"north street",
+          "native":"thelur",
+          "district":"ariyalur",
+          "pin code":"621704"
+      }
+      ],
+    
+    "education qualification":[
+    {
+        "degree":"B.E ECE",
+        "institution":"roever engineering colleage",
+        "year of passing":"2017-2021",
+        "percentage":"75"
+    },
+    {
+        "school":"hsc",
+        "institution":"thanthairoever higher secondary school",
+        "year of passing":"2016-2017",
+        "percentage":"77"
+    },
+    {
+        "school":"sslc",
+        "institution":"thanthairoever higher secondary school",
+        "year of passing":"2014-2015",
+        "percentage":"84"
+    }
+    ],
+    "computer knowleadge":["c programing", "sql"],
+    "known languags":["tamil","english"]
+}
