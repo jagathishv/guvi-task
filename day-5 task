@@ -1,0 +1,141 @@
+//Print odd numbers in an array using anonymous
+// let oddNumber=function(){
+// let number = [1,2,3,4,5,6,7,8,9];
+// for(let i=0; i<number.length; i++){
+//     if (i%2==0)
+//     console.log(number[i]);
+// }}
+// oddNumber();
+
+//Print odd numbers in an array using IIF
+// (function(){
+//       let number = [1,2,3,4,5,6,7,8,9];
+//       for(let i=0; i<number.length; i++){
+//       if (i%2==0)
+//  console.log(number[i]);
+// }})();
+
+//Convert all the strings to title caps in a string array
+// let text = function(a){
+//   let b = a.split(" ");
+//   for(let i=0; i<b.length;i++)
+//   b[i] = b[i].charAt(0).toUpperCase()+b[i].slice(1);
+//   console.log(b.join(" "));  
+// }
+// text("hai im jagathish");
+
+//in iif method
+// (function(a){
+//        let b = a.split(" ");
+//        for(let i=0; i<b.length;i++)
+//        b[i] = b[i].charAt(0).toUpperCase()+b[i].slice(1);
+//        console.log(b.join(" "))})("hai im jagathish");
+
+//Sum of all numbers in an array using anonymous
+// let sum = function(){
+//     let number =[1,2,8,9,6,4,7,8,9]
+//     let a = 0;
+//  for (let i=0;i<number.length;i++)
+//      a = a +number[i] 
+//      console.log(a);
+// }
+// sum()
+
+//Sum of all numbers in an array using IIF
+// (function(){
+//     let number =[1,2,8,9,6,4,7,8,9];
+//     let result = number.reduce((a,b)=>a+b);
+//     console.log(result);
+// })();
+
+//Return all the palindromes in an array using anonymous function
+// let palindromes = function(text){
+//     let task = text.toString().split("").reverse().join("").split(",");
+//     let result1 = text.filter(val=>task.includes(val));
+//     let result2 = text.filter(val=>!task.includes(val));
+//      console.log("Palindroms in given array ",result1);
+//      console.log("Non Palindroms in given array ",result2);
+// }
+// palindromes(["jagathish","ananth","suriya","vijay","suji"])
+
+//Return all the palindromes in an array using IIF
+// ( function(text){
+//     let task = text.toString().split("").reverse().join("").split(",");
+//     let result1 = text.filter(val=>task.includes(val));
+//     let result2 = text.filter(val=>!task.includes(val));
+//      console.log("Palindroms in given array ",result1);
+//      console.log("Non Palindroms in given array ",result2);
+// })(["jagathish","ananth","suriya","vijay","suji"])
+
+// Median of two shorted array using anonymous function
+// let medianNumber = function(ar1,ar2){
+//     let result = ar1.concat(ar2).sort((a,b)=>a-b);
+//     let ans = result.filter(val=>val>=0)
+//     console.log(ans[0]);
+// }
+// medianNumber([5,2,9,7],[-12, ,1,-10,])
+
+// Median of two shorted array using IIF method
+// (function(ar1,ar2){
+//     let result = ar1.concat(ar2).sort((a,b)=>a-b);
+//     let ans = result.filter(val=>val>=0)
+//     console.log(ans[0])})([5,2,9,7],[-12, ,0,-10,]);
+
+//Remove duplicates from an array using anonymous function.
+//  let duplicates = function(chars){
+//     let result = chars.filter((a,b)=>chars.indexOf(a)==b);
+//     console.log(result);
+//  }
+//  duplicates(['A', 'B', 'A', "1","1",'C', 'B']);
+
+//Remove duplicates from an array using IIF.
+//  (function(chars){
+//     let result = chars.filter((a,b)=>chars.indexOf(a)==b);
+//     console.log(result);
+//  })(['A', 'B', 'A', "1","1",'C', 'B']);
+
+//Rotate an array by k times using anonymous function
+// let rotate = function (k){
+//  let array =  [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+//  let num = array.splice(0,k);
+//  array.push(num);
+//  console.log(array.toString());
+// }
+// rotate(3);
+
+//Rotate an array by k times using IIF
+// (function (k){
+//     let array =  [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+//     let num = array.splice(0,k);
+//     array.push(num);
+//     console.log(array.toString());
+//    })(1)
+
+// Print odd numbers in an array
+// let array =  [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let odd =array.filter(val=>array.indexOf(val)%2==0);
+// console.log(odd);
+
+//Convert all the strings to title caps in a string array
+// let text = "hai im jagathish"
+// let result = ()=>{
+// let ans = text.split("").join("").charAt(0).toUpperCase()+text.slice(1)
+//   console.log(ans);
+ //}
+ //result()
+
+//Sum of all numbers in an array
+ //let array =  [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+ //let sum = array.reduce((a,b)=>a+b,0);
+ //console.log(sum);
+
+//Return all the palindromes in an array
+let array =  ["jagathish","ananth","suriya","vijay","suji"];
+let palindromes = ()=>{
+    let array2 = array.toString().split("").reverse().join("").split(",")
+    let result  = array2.filter(val=>array.includes(val))
+    console.log(array);
+    console.log(result);
+}
+palindromes();
+
