@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>JAGATHISH DAY-9 TASK
+</head>
+<body>
+    <script>
+        var http = new XMLHttpRequest();
+      http.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200)
+          console.log(this.responseType);
+        var obj = JSON.parse(this.responseText);
+      //   obj.forEach(({continents,region})=>{
+      //       console.log(continents,region);
+      // })
+      // obj.filter(con=>{
+      //      if(con.continents=="Asia" && con.region=="Asia")
+      //      console.log(con.name);
+     // })
+      // obj.filter(con=>{
+      //      if(con.currencies.USD.symbol=="$")
+      //      console.log(con.name);
+      // })
+      // obj.filter(con=>{
+      //     if(con.population<200000)
+      //     console.log(con.name);
+      // })
+      // obj.forEach(con => {
+      //   console.log("countries Name:",con.name)
+      //   console.log("countries Capital:",con.capital)
+      //   console.log("countries flag:",con.flag)
+      // });
+      // var c = obj.reduce((sum,con)=>{
+      //   return sum+=con.population;
+
+      // },0)
+      // console.log(c)
+      }
+      http.open("GET", "https://restcountries.com/v3.1/all");
+      http.send();
+    </script>
+    
+</body>
+</html>
