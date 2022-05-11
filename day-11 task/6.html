@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design form shown in the link
+        (http://evc-cit.info/cit040/formguide/card_0.png)</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .name
+          {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        section {
+            display: inline-block;
+            border: 3px solid black;
+            padding: 20px;
+            padding-top: 0px;
+            outline-style: solid;
+            outline-color: white;
+            outline-width: 10px;
+            background-color: whitesmoke;
+        }
+
+        h2 {
+            margin: 10px 0px;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+<section>
+    <h2>Yes! I want to subscribe to <i> Mag-O-Zine</i></h2>
+    <div class="main">
+        <div class="box">
+            <input type="text" size="25" />
+            <input type="text" size="25" /> <br />
+        </div>
+        <div class="name">
+            <label for="">First Name</label>
+            <label for="" style="margin-right: 36%">Last Name</label>
+        </div>
+        <div>
+            <input type="text" class="address" size="70" />
+            <br />
+            <label for="">Address</label>
+        </div>
+        <div class="box">
+            <input type="text" />
+            <input type="text" />
+            <input type="number" size="10 " /> <br />
+        </div>
+        <div class="name">
+            <label for="">City</label>
+            <label for="">State</label>
+            <label for="" style="margin-right: 98px">Zip</label>
+        </div>
+        <div>
+
+            <label for="">Subscribe for:</label>
+            <input type="checkbox" name="s" />
+            <label for="">1 year ($19.95)</label>
+            <input type="checkbox" name="s" />
+            <label for="">2 year ($35.00)</label>
+
+        </div>
+        <div>
+            <p>Send me more information about:</p>
+            <input type="checkbox" name="" id="" />
+            <label for="">Computer-Zine</label> <br />
+            <input type="checkbox" name="" id="" />
+            <label for="">Fishing-Zine</label> <br />
+            <input type="checkbox" name="" id="" />
+            <label for="">Cat-O-Zine</label> <br />
+        </div>
+    </div>
+</section>
+</form>
+</body>
+
+</html>

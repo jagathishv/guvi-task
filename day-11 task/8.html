@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Write HTML input tags snippet to show default values for all Form
+        elements.
+    </title>
+</head>
+
+<body>
+    <form action="">
+        <!--<input> -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name" />
+
+        <!-- <textarea> -->
+        <textarea name="comments" id="" cols="30" rows="10" placeholder="Enter your comments here...">
+      </textarea>
+
+        <!-- <button> -->
+        <button type="button" onclick="alert('Welcome Here!!!')">
+            Click me!
+        </button>
+
+        <!-- <datalist> <option> -->
+        <input list="browsers" name="browser" />
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+        </datalist>
+
+        <!-- <output> -->
+        <form oninput="x.value = parseInt(a.value) + parseInt( b.value)">
+            <input type="number" id="a" value="0" />+
+            <input type="number" id="b" value="0" /> =
+            <output name="x" for="a b"></output>
+        </form>
+
+        <!-- <select> <optgroup> -->
+        <label for="passedout">Passed Out : </label>
+        <select name="passedout" id="passedout">
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+        </select>
+
+        <label for="batch">Batch Preference : </label>
+        <select name="batch" id="batch">
+            <optgroup label="Weekend">
+                <option>B32</option>
+                <option>B34</option>
+                <option>B35</option>
+            </optgroup>
+            <optgroup label="Weekday">
+                <option>B23</option>
+                <option>B56</option>
+                <option>B45</option>
+            </optgroup>
+        </select>
+
+    </form>
+</body>
+
+</html>

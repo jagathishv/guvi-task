@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design a contact us form with all fields as required.</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+      }
+      div {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+      }
+      input,
+      textarea {
+        display: flex;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <div class="container">
+      <form action="">
+        <div>
+          <label>Name<span>*</span>:</label>
+          <input type="text" required/>
+        </div>
+        <div>
+          <label>Phone Number<span>*</span>:</label>
+          <input type="text" required/>
+        </div>
+        <div>
+          <label>Email<span>*</span>:</label>
+          <input type="text" required/>
+        </div>
+        <div>
+          <label>Comments<span>*</span>:</label>
+          <textarea name="comment" cols="20" rows="4"></textarea>
+        </div>
+      </form>
+    </div>
+    <button>Submit</button>
+  </body>
+</html>
