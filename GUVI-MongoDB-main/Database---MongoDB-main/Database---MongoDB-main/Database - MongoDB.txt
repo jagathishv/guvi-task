@@ -1,0 +1,68 @@
+
+
+Design database for Zen class programme
+users
+codekata
+attendance
+topics
+tasks
+company_drives
+mentors
+
+
+The following are the queries need to be executed:-
+
+
+Question 1:-
+
+1.Find all the topics and tasks which are thought in the month of October
+
+Ans:-
+
+db.topics.find({month:oct},{topics:1,tasks:1})
+
+
+Question 2:-
+
+2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+Ans:-
+
+db.companydrive.find({date:{$in:[15 oct-2020,31-oct-2020]})
+
+
+Question 3:-
+
+3.Find all the company drives and students who are appeared for the placement.
+
+Ans:-
+
+db.companydrive.find({},{companyName:1,user:1})
+
+
+Question 4:-
+
+4.Find the number of problems solved by the user in codekata
+
+Ans:-
+
+db.codekata.count({userId:1})
+
+
+Question 5:-
+
+5.Find all the mentors with who has the mentee's count more than 15
+
+Ans:-
+
+db.mentors.find({length.user:{$gt:15}},{name:1})
+
+
+Question 6:-
+
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+
+Ans:-
+
+db.tasks.find({$and:[{present:0},{submission:{$nin:[15 oct-2020, 31-oct-2020]}}]})
+
